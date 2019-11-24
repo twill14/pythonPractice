@@ -1,4 +1,4 @@
-from incrementer import Incrementer
+from Counting.incrementer import Incrementer
 
 
 def count_five_times(count):
@@ -16,5 +16,5 @@ count_five_times(counter1)
 print("Five values for counter2")
 count_five_times(counter2)
 
-print("Five values for counter3")
+print("Another five values for counter3")
 count_five_times(counter1)

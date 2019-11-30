@@ -1,1 +1,51 @@
+import sys
+
+print(sys.version)
 print("Hello World")
+
+
+Numbers="1233334454325562346634773425643890"
+
+print("0123456".find(str(1)))
+
+number = Numbers[3]
+evens = Numbers[::2]
+
+print(number)
+
+print(evens)
+
+mytup = (0, 3, '4', (3, 5, "oh snap"))
+
+mylist = [3, 4, '4', ["dayum sun", "okay", 3], "tuple incoming", (3, 5, '3', 'go ham')]
+
+mylist.extend([2, 4, 5])
+mylist.append([2, 4, 5])
+
+A = mylist
+
+# A and mylist both point to the same list. This is called Aliasing.
+
+A.extend((3, 4, 5))
+
+print(mylist)
+
+# However you can clone a list by using [:] so that:
+
+A=mylist[:]
+
+A.extend([2,3])
+
+print(mylist)
+print(A)
+
+D={'a':0,'b':1,'c':2}
+
+print(D.values())
+
+
+# Loops
+
+for i,things in enumerate(mylist):
+    print("This is the index: " + str(i))
+    print(things)
